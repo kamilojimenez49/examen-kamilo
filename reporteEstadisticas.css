@@ -1,0 +1,37 @@
+.reporte-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#nav-reporte {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.td-promedio {
+    font-weight: 700;
+}
+
+.promedio-alto {
+    color: var(--color-success);
+}
+
+.promedio-medio {
+    color: #c47a00;
+}
+
+.promedio-bajo {
+    color: var(--color-danger);
+}
+
+.sin-datos {
+    color: var(--color-text-soft);
+    font-style: italic;
+}
+
+@media(max-width: 900px) {
+    .reporte-container {
+        grid-template-columns: 1fr;
+    }
+}

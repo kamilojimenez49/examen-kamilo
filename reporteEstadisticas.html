@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme School - Reporte de Estadísticas</title>
+    <link rel="stylesheet" href="/CSS/reporteEstadisticas.css">
+    <link rel="stylesheet" href="/CSS/reporteEstadisticas.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="img-container">
+            <img id="logo-img" src="/assets/LogoPlataforma.png" alt="Acme School">
+            <div class="div-container">
+                <h1>Acme School</h1>
+                <p>Exams platform</p>
+            </div>
+        </section>
+
+        <nav class="nav-container">
+            <a id="nav-resolver" href="/HTML/reporteEstadisticas.html">Resolver examen</a>
+            <a id="nav-usuarios" href="/HTML/crearUsuario.html">Usuarios</a>
+            <a id="nav-examenes" href="/HTML/crearExamen.html">Exámenes</a>
+            <a id="nav-reporte" class="active" href="/HTML/reporteEstadisticas.html">Reporte</a>
+        </nav>
+
+        <div class="btnS-container">
+            <a id="btn-salir" href="/HTML/login.html">Salir</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-examenes">
+            <p class="etiqueta">ADMINISTRACIÓN</p>
+            <h2>REPORTE DE ESTADÍSTICAS</h2>
+            <p class="descripcion">Visualiza el desempeño de los estudiantes en cada examen registrado</p>
+        </section>
+
+        <div class="reporte-container">
+
+            <div class="tarjeta">
+
+                <div class="encabezado">
+                    <h2>Estadísticas de exámenes</h2>
+                    <span id="contador" class="contador">0 registros</span>
+                </div>
+
+                <div class="tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>CÓDIGO</th>
+                                <th>TÍTULO</th>
+                                <th>% APROBACIÓN</th>
+                                <th>ESTUDIANTES</th>
+                                <th>PROMEDIO %</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaReporte"></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="/JavaScript/reporteEstadisticas.js"></script>
+
+</body>
+
+</html>
